@@ -1,13 +1,15 @@
 import React from 'react';
 import './IpoCard.css';
 
-const IpoCard = ({ logo, title, priceBand, issueSize, issueType, listingDate, openDate, closeDate }) => {
+const IpoCard = ({ companyLogo, companyName, priceBand, issueSize, issueType, listingDate, open, close }) => {
   return (
     
     <div className="ipo-card">
       <div className="ipo-header">
-        <img src={logo} alt={`${title} Logo`} className="ipo-logo" />
-        <h3 className="ipo-title">{title}</h3>
+        <div className='ipoLogos'>
+        <img src={companyLogo} alt={`${companyName} Logo`} className="ipo-logo" />
+        </div>
+        <h3 className="ipo-title">{companyName}</h3>
       </div>
       <div className="ipo-details">
         <div className="ipo-row">
@@ -17,11 +19,11 @@ const IpoCard = ({ logo, title, priceBand, issueSize, issueType, listingDate, op
           </div>
           <div className="ipo-item">
             <p>OPEN:</p>
-            <p>{openDate}</p>
+            <p>{open}</p>
           </div>
           <div className="ipo-item">
             <p>CLOSE:</p>
-            <p>{closeDate}</p>
+            <p>{close}</p>
           </div>
         </div>
         <div className="ipo-row">

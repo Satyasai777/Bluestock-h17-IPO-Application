@@ -1,0 +1,175 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f8f9fb;
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* IPO Statistics */
+.ipo-stats {
+  width: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bubble-chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.bubble.large {
+  width: 200px;
+  height: 200px;
+}
+
+.bubble.small {
+  width: 120px;
+  height: 120px;
+}
+
+.bubble:nth-child(1) {
+  background: #3498db;
+  width: 100px;
+  height: 100px
+}
+.bubble:nth-child(2) {
+  background: #9b59b6;
+  position: relative;
+  top: -10px;
+}
+.bubble:nth-child(3) {
+  background: #f39c12;
+  position: relative;
+  top: 10px;
+}
+
+/* Quick Links */
+.quick-links {
+  width: 35%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quick-links h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.quick-links p {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.quick-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quick-links li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quick-links li:last-child {
+  border-bottom: none;
+}
+
+.quick-links img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.quick-links span a {
+  color: #007bff;
+  font-size: 12px;
+}
+
+.quick-links span a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quick-links {
+    width: 100%;
+  }
+}
+
+/* Main Board IPO */
+.main-board-ipo {
+  width: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.view-report {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-report:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+      flex-direction: column;
+  }
+  .ipo-stats, .quick-links, .main-board-ipo {
+      width: 100%;
+  }
+  .bubble-chart {
+      justify-content: center;
+  }
+}

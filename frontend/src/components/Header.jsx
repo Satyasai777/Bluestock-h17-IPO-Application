@@ -37,6 +37,8 @@ const Header = () => {
         <a href="#support" className="nav-link">SUPPORT</a>
       </nav>
 
+      {/* <Link to='/home'>Home Page</Link> */}
+
       <div className="auth-buttons">
         <Link to="/signin" className="nav-link">Sign In</Link>
         <Link to="/signup" className="signup-btn">Sign Up Now</Link>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.headerSection1{
+    display: flex;
+    width: 100%;
+    height: 12%;
+    background-color: #fff;
+}
+.headerSection1_1{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9px;
+}
+.headerSection1_1 h1{
+    margin: 6px 0;
+}
+.headerSection1_1 p{
+    font-size: small;
+    color: #9a9a9a;
+}
+.headerSection1_2{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.headerSection1_2 .registerBtn,.cancelBtn{
+    border: 2px solid rgba(83, 83, 237, 0.752);
+    width: 120px;
+    height: 45px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+.registerBtn{
+    background: rgba(83, 83, 237, 0.752);
+    color: white;
+}
+.registerBtn:hover{
+    background: blue;
+}
+.cancelBtn{
+    color: rgba(83, 83, 237, 0.752);
+    background: #fff;
+}
+.cancelBtn:hover{
+    background: red;
+    border-color: red;
+    color: white;
+}
+
+/* headerSection1 completed */
+
+.bodySection1{
+    width: 100%;
+    height: 88%;
+    display: flex;
+}
+
+.bodySection1_1{
+    width: 22%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .navLinks1{
+    margin: 0px 10px;
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background:#fff;
+    border-radius: 5px;
+    padding: 10px 5px;
+} */
+
+.link1{
+    width: 85%;
+    height: 40px;
+    margin: 0 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#9a9a9a;
+    font-size:small;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+.link1:hover{
+    color: #fff;
+    transform: scale(1.03);
+    background-color: lightblue;
+    color: rgb(109, 109, 202);
+}
+
+
+
+.bodySection1_2{
+    width: 1px;
+    height: 100%;
+    background-color: #9a9a9a;
+}
+.bodySection1_3{
+    width: 88%;
+    height: 100%;
+}

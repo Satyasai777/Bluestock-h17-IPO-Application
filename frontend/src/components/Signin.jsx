@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignIn.css";
 // Import your logo
 // import logo from "../assets/logo.png"; // Adjust the path based on your folder structure
 
 const Signin = () => {
   const [recaptchaVerified, setRecaptchaVerified] = useState(false);
+  const navigate = useNavigate();
 
   const handleRecaptchaChange = (value) => {
     setRecaptchaVerified(!!value);
@@ -43,11 +44,7 @@ const Signin = () => {
               onChange={handleRecaptchaChange}
             />
           </div>
-          <button
-            type="submit"
-            disabled={!recaptchaVerified}
-            className="login-button"
-          >
+          <button type="submit" disabled={!recaptchaVerified} className="login-button" onClick={() => navigate("/home")}>
             Login
           </button>
 

@@ -1,0 +1,171 @@
+
+.main8{
+    width: 85vw;
+    height: 85vh;
+    background-color: #fff;
+    position: fixed;
+}
+
+.main8header{
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main8header h3{
+    margin:0px 30px;
+}
+.main8header .main8Btn1{
+    width: 150px;
+    height: 40px;
+    /* margin-left: 700px; */
+    margin-right: 60px;
+}
+.main8header .main8Btn1 .main8RegisterBtn{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    background: #fff;
+    color:rgb(75, 75, 207);
+}
+.main8header .main8Btn1 .main8RegisterBtn:hover{
+    background-color: lightblue;
+}
+
+.main8body{
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    margin-top: 15px;
+}
+.main8body .main8table{
+    width:98% ;
+    height: 75%;
+    background-color: #fff;
+}
+
+.main8body .main8table .table8{
+    width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.main8body .main8table .table8 th, .table8 td {
+    border: none; /* Removes all borders */
+    padding: 10px; /* Adjust padding for uniform spacing */
+    text-align: center;
+    height: 50px; /* Sets equal height for all cells */
+}
+.main8body .main8table .table8 th {
+    background-color: #fff; /* Header background color */
+    color: #000; /* Header text color */
+    font-size: small;
+    font-weight: bold;
+}
+.main8body .main8table .table8 td{
+
+    font-size: small;
+}
+.main8body .main8table .table8 tr:nth-child(even) {
+    background-color: #ffff; /* Light gray background for even rows */
+}
+  
+.main8body .main8table .table8 tr:nth-child(odd) {
+    background-color: rgb(225, 233, 237); /* White background for odd rows */
+}
+.main8body .main8table .table8 td .main8UpdateBtn{
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background: rgb(86, 86, 215);
+    color: #fff;
+}
+.main8body .main8table .table8 td .main8UpdateBtn:hover{
+    background: blue;
+}
+.main8body .main8table .table8 td .status8{
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+    color: darkgreen;
+    background-color: #bceebe;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 8px;
+    font-size: smaller;
+}
+
+
+
+.pagination-container {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+  
+  .pagination-btn1 {
+    background-color: #fff;
+    color: #9a9a9a;
+    border: 1px solid lightblue;
+    padding: 3px 6px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .pagination-btn1:hover {
+    background-color: #9a9a9a;
+    color: #000;
+  }
+  
+  .pagination-btn1:disabled {
+    background-color: #d3d3d3;
+  }
+  
+  .pagination-btn1.active {
+    background-color: #2E7D32;
+    font-weight: bold;
+  }
+
+  .pagination-btn2 {
+    background-color: #fff;
+    color: #9a9a9a;
+    border: 1px solid lightblue;
+    width: 35px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .pagination-btn2:hover {
+    background-color: #9a9a9a;
+    color: #000;
+  }
+  
+  .pagination-btn2:disabled {
+    background-color: #d3d3d3;
+  }
+  
+  .pagination-btn2.active {
+    background-color: #fff;
+    color: blue;
+    border: 1px solid blue;
+  }
+  
+
